@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi Página Web Sencilla</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#">Menú</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#quienes-somos">Quienes Somos</a></li>
+                        <li><a href="#servicios">Nuestros Servicios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h1>Bienvenido a Mi Página</h1>
+        <div class="gallery">
+            <img src="foto1.jpg" alt="Imagen 1">
+            <img src="foto2.jpg" alt="Imagen 2">
+            <img src="foto3.jpg" alt="Imagen 3">
+        </div>
+    </section>
+
+    <section id="quienes-somos">
+        <h2>Quienes Somos</h2>
+        <p>Aquí va el texto sobre quienes somos...</p>
+    </section>
+
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <p>Aquí describimos nuestros servicios...</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Mi Página Sencilla</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
